@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Alpha Group</title>
+
+	<!-- Website Icon -->
+	<link rel = "shortcut icon" type = "image" href = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Autodesk_Logo_A_only.svg/629px-Autodesk_Logo_A_only.svg.png">
+
+	<!-- Meta Tags -->
+	<meta charset = "UTF-8"> <!-- Language -->
+	<meta name = "viewport" content = "width = device-width, initial-scale = 1"> <!-- Mobile Responsiveness -->
+
+	<!-- Bootstrap 3 Library -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	<!-- Main CSS -->
+	<style>
+		/* Fonts for Navigation Bar */
+		@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+		/* Fonts for Headers */
+		@import url('https://fonts.googleapis.com/css2?family=Exo:wght@700&display=swap');
+
+		/* Fonts for Paragraphs */
+		@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+		/* Defaults */
+		h1, h2, h3 {
+			font-family: 'Exo', sans-serif;
+		}
+
+		h1 {
+			color: darkblue;
+			margin-top: 125px;
+			margin-bottom: 25px;
+		}
+
+		h2 {
+			color: #395ec7;
+		}
+
+		p {
+			color: black;
+			font-family: "Open Sans", sans-serif;
+			font-size: 1.15em;
+			line-height: 1.75em;
+		}
+
+		p.subtitle {
+			color: rgb(75, 75, 75);
+			margin-bottom: 75px;		
+		}
+
+		/* Navigation Bar */
+		nav {
+			font-family: 'Dela Gothic One', cursive;
+			width: 100%; 
+			z-index: 100;
+		}
+
+		h2.logo a {
+			color: white;
+		}
+
+		h2.logo a:hover, h2.logo a:focus, h2.logo a:active {
+			color: lightblue;
+			text-decoration: none;
+		}
+
+		@media (max-width: 768px) {
+			h2.logo {
+				margin-left: 15%;
+			}
+		}
+
+		li a.nav-link {
+			color: white;
+			margin-top: 10px;
+		}
+
+		li a.nav-link:hover, li a.nav-link:focus, li a.nav-link:active {
+			background: none;
+			color: lightblue;
+		}
+		
+		.icon-bar {
+			background-color: white;
+		}
+
+		/* Header Page */
+		header {
+			background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+			color: white;
+			text-align: center;
+			height: 100vh;
+		}
+
+		/* CPF Page */
+		tr.header {
+			background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+		}
+
+		tr th {
+			color: white;
+			font-size: 1.5em;
+			line-height: 2.5em;
+			padding-left: 15px;
+		}
+
+		tr td {
+			font-size: 1.25em;
+			line-height: 3.5em;
+			padding-left: 15px;
+			border-bottom: 1px solid lightgrey;
+		}
+
+		@media (max-width: 992px) {
+			tr th {
+				line-height: 1.25em;
+				padding-top: 15px;
+				padding-bottom: 15px;
+			}
+
+			tr td {
+				line-height: 1.75em;
+				padding-top: 15px;
+				padding-bottom: 15px;
+			}
+		}
+
+		/* CPS Page */
+		img.CPS {
+			width: 65%;
+			border-radius: 50%;
+			margin-top: 25px;
+			margin-bottom: 50px;
+		}
+
+		/* MVP Page */
+		div.color {
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			margin-right: 5px;
+			margin-bottom: 25px;
+		}
+
+		div.MVP-features {
+			background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+			border-radius: 20px;
+			margin-top: 5px; 
+			margin-right: 15px;
+			height: 50px;
+		}
+
+		h3.MVP-features {
+			color: white;
+			font-size: 1.25em;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -150%);
+		}
+
+		/* Revenue Streams Page */
+		img.revenue-image {
+			width: 100%; 
+			opacity: 75%; 
+			margin-bottom: 25px;
+		}
+
+		@media (max-width: 768px) {
+			img.revenue-image {
+				visibility: hidden;
+				height: 0;
+			}
+		}
+
+		div.revenue-stream {
+			min-height: 175px;
+			margin-bottom: 25px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<!-- Navigation -->
+		<nav class = "navbar navbar-style">
+			<div class = "container">
+				<div class = "navbar-header">
+					<!-- Navigation Button -->
+					<button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = "#micon" style = "margin-top: 18px;">
+						<span class = "icon-bar"></span>
+						<span class = "icon-bar"></span>
+						<span class = "icon-bar"></span>
+					</button>
+
+					<!-- Alpha Logo -->
+					<h2 class = "logo"><a href = "#">Alpha Group</a></h2>
+				</div>
+
+				<!-- Navigation Selections -->
+				<div class = "collapse navbar-collapse" id = "micon">
+					<ul class = "nav navbar-nav navbar-right">
+						<li><a href = "#CPF" class = "nav-link">CPF</a></li>
+
+						<li><a href = "#market" class = "nav-link">Market</a></li>
+
+						<li><a href = "#MVP" class = "nav-link">MVP</a></li>
+
+						<li><a href = "#revenue" class = "nav-link">Revenues</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Header Title and Subtitle -->
+		<div class = "container">
+			<div class = "col-sm-10 col-sm-offset-1">
+				<h1 style = "color: white; font-size: 5em; margin-top: 15%;">Learning to Lead With Technology</h1>
+
+				<p style = "color: rgb(230, 230, 230); font-size: 1.5em; margin-top: 50px;">We strive to identify, prioritize and select the right market opportunities by utilizing the Value Framework.</p>
+			</div>
+		</div>
+	</header>
+
+	<!-- CPF Page -->
+	<div class = "container" id = "CPF">
+		<!-- Title and Subtitle -->
+		<div class = "col-sm-10">
+			<h1>Customer Problem Features</h1>
+			
+			<p class = "subtitle">In this step, we try to identify the needs of the society. Below are some of our assumptions about our customers, their problems, pain level they experienced, and possible solutions. </p>
+		</div>
+
+		<div class = "col-sm-12">
+			<table style = "width: 100%;">
+				<!-- Header -->
+		  		<tr class = "header">
+				    <th>Customer</th>
+				    <th>Problem</th>
+				    <th>Pain Level</th>
+				    <th>Features</th>
+			  	</tr>
+
+			  	<!-- Ironing Clothes Problem -->
+			  	<tr>
+				    <td>Mom</td>
+				    <td>Ironing Clothes</td>
+				    <td>8</td>
+				    <td>Machine that automates ironing</td>
+			  	</tr>
+
+			  	<!-- Trash Management Problem -->
+			  	<tr>
+				    <td>Both Parents</td>
+				    <td>Scattered Trash</td>
+				    <td>6</td>
+				    <td>Container that prevents trash bags getting ripped</td>
+			  	</tr>
+
+			  	<!-- Washing Dishes Problem -->
+			  	<tr>
+				    <td>Mom</td>
+				    <td>Washing Dishes</td>
+				    <td>6</td>
+				    <td>Automatic dishwasher machine</td>
+			  	</tr>
+
+			  	<!-- Household Pests Problem -->
+			  	<tr>
+				    <td>Dad</td>
+				    <td>Household Pests</td>
+				    <td>6</td>
+				    <td>Something that prevents insects entering the building</td>
+			  	</tr>
+
+			  	<!-- Boredom Problem -->
+			  	<tr>
+				    <td>Brother</td>
+				    <td>Boredom</td>
+				    <td>4</td>
+				    <td>Technology that actively engages users</td>
+			  	</tr>
+			</table>
+		</div>
+	</div>
+
+	<!-- Customer Problem Statement Page -->
+	<div class = "container-fluid" style = "background-color: rgb(245, 245, 245); margin-top: 100px;">	
+		<div class = "container">
+			<!-- Title and Subtitle -->
+			<div class = "col-sm-10">
+				<h1 style = "margin-top: 50px;">Customer Story</h1>
+				
+				<p class = "subtitle">From the problems identified earlier, we merely chose two - such as ironing and trash management - to analyze deeper. Below is what our customers have to say.</p>
+			</div>
+
+			<!-- Ironing CPS -->
+			<div class = "col-sm-6" style = "text-align: center;">
+				<h2>Ironing</h2>
+
+				<img class = "CPS" src = "ironing image.jpg">
+
+				<p align = "justify" style = "font-size: 1em;">
+					Once upon a time, Sandi’s mother lived in a house with many residents inside.
+					<br><br>
+
+					She wakes up, excited to drink a glass of milk and unfortunately sees the pile of dry clothes through her peripheral vision.
+					<br><br>
+
+					As she sighs, she vividly reminds herself how tired she was the last time she ironed 3 mountains of clothes.
+					<br><br>
+
+					She quickly asked her son to do the ironing, but he was also too lazy to do it.
+					<br><br>
+
+					Man, how great it would be to just have a machine to iron the clothes instead.
+				</p>
+			</div>
+
+			<!-- Trash Management CPS -->
+			<div class = "col-sm-6" style = "text-align: center;">
+				<h2>Trash Management</h2>
+
+				<img class = "CPS" src = "trash image.jpg">
+
+				<p align = "justify" style = "font-size: 1em; margin-bottom: 50px;">
+					Karen lives in South Korea with her family and resides near a university. She lives in an apartment with a lot of college students.
+					<br><br>
+
+					Every morning, a mother would go out for a morning run around the apartment lot.
+					<br><br>
+
+					She would often see the trashes she threw - neatly and properly - the previous day always scattered with the plastic bag ripped open.
+					<br><br>
+
+					Although she was aware of the fact that the stray cats or birds would often rip the bags open, she still always has concerns as to how she should keep and organize the trash she throws properly, but she can’t seem to find nor think of a better way because she has been following the rules and regulations in properly throwing or segregating the trash.
+					<br><br>
+
+					She thought that it would be a great idea if a new type of plastic bag or organizer would help in preventing the plastic trash bag from getting ripped.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Market Size Page -->
+	<div class = "container" id = "market">
+		<!-- Title and Subtitle -->
+		<div class = "col-sm-10">
+			<h1>Top Down Market Size</h1>
+
+			<p class = "subtitle">After figuring out the problems of our customers, we would like to know whether the potential market is promising enough for us to continue.</p>
+		</div>
+
+		<!-- Ironing Market Size -->
+		<div class = "col-sm-6">
+			<h2 style = "font-size: 3em;">1 Billion</h2>
+
+			<p>In 2018, Electric iron market worldwide was valued at 1 billion US Dollars. Demand for irons is expected to increase due to the desire for millennials to look presentable and well-dressed.</p>
+		</div>
+
+		<!-- Ironing Graph -->
+		<div class = "col-sm-6">
+			<img src = "https://www.millioninsights.com/uploads/us-electric-iron-market.png" alt = 
+			"electric iron market size graph" style = "width: 100%;">
+		</div>
+
+		<!-- Trash Management Market Size -->
+		<div class = "col-sm-10 col-sm-offset-1" style = "margin-top: 50px;">
+			<div class = "col-sm-7" align = "justify">
+				<p>313,800,000 Americans used plastic garbage bags and trash can liners in 2020. Moreover, the figure is projected to increase to 322,150,000 in 2025.</p>
+			</div>
+
+			<div class = "col-sm-3">
+				<h2 style = "font-size: 2.5em; float: right;">320 Million</h2>
+			</div>
+		</div>
+	</div>
+
+	<!-- MVP Page -->
+	<div class = "container" id = "MVP">
+		<!-- Title and Subtitle -->
+		<div class = "col-sm-10">
+			<h1>Minimum Viable Product</h1>
+
+			<p class = "subtitle" style = "margin-bottom: 25px;">Since it is evident that the iron market is much larger than that of trash management, our team decided to continue solving the iron problem only. Below is a draft of what our MVP looks like.</p>
+		</div>
+	
+		<!-- Image -->
+		<div class = "col-sm-5">
+			<img src = "MVP image.png" alt = "MVP image" style = "width: 100%;">
+		</div>
+
+		<!-- Description -->
+		<div class = "col-sm-7">
+			<!-- Main Description -->
+			<h2 style = "margin-top: 10%; margin-bottom: 50px;">MVP Prototype</h2>
+
+			<p style = "padding-bottom: 25px; border-bottom: 1px solid lightgrey;">This product should match the Minimum Viable Set of Features like having the ability to adapt to different kinds of fabric and the ability to notify users when ironing has finished.</p>
+
+			<!-- Color Description -->
+			<p style = "color: rgb(100, 100, 100); margin-top: 15px; font-size: 1em;">Color</p>
+
+			<div class = "color" style = "background-color: orange;"></div>
+			<div class = "color" style = "background-color: lightgrey;"></div>
+			<div class = "color" style = "background-color: darkgrey;"></div>
+		</div>
+
+		<!-- Main Features -->
+		<div class = "col-sm-9">
+			<div class = "col-sm-2 MVP-features">
+				<h3 class = "MVP-features">Automatic</h3>
+			</div>
+
+			<div class = "col-sm-2 MVP-features">
+				<h3 class = "MVP-features">Fast</h3>
+			</div>
+
+			<div class = "col-sm-2 MVP-features">
+				<h3 class = "MVP-features">Durable</h3>
+			</div>
+		</div>
+	</div>
+
+	<!-- Revenues Page -->
+	<div class = "container-fluid" style = "background-color: rgb(245, 245, 245); margin-top: 100px;">	
+		<div class = "container" id = "revenue">
+			<!-- Title and Subtitle -->
+			<div class = "col-sm-10">
+				<h1 style = "margin-top: 50px;">Revenue Streams</h1>
+
+				<p class = "subtitle" style = "margin-bottom: 25px;">Below are some methods in which we can make revenues while avoiding one time sales. The prices we will charge for each revenues are also mentioned.
+				<br><br>
+
+				Along the way, we are going to promote our products using online paid advertisements like SEM, display advertising, and social media advertising.</p>
+			</div>
+		</div>
+
+		<div class = "container-fluid">
+			<div class = "col-sm-12">
+				<img src = "revenue image.jpg" alt = "" class = "revenue-image">
+			</div>
+		</div>
+
+		<div class = "container">
+			<!-- Rent Method -->
+			<div class = "col-sm-4 revenue-stream">
+				<h2>Rent</h2>
+
+				<p>Renting/leasing services using the automatic iron. Service price starts from $1 per kilogram of clothes.</p>
+			</div>
+
+			<!-- Sell Product Method -->
+			<div class = "col-sm-4 revenue-stream">
+				<h2>Sell Product</h2>
+
+				<p>Sell our product directly to targeted customers. Product price ranges from $399 to $649.</p>
+			</div>
+
+			<!-- Sell Accessories -->
+			<div class = "col-sm-4 revenue-stream">
+				<h2>Sell Accessories</h2>
+
+				<p>Sell parts of the iron features or accessories. Price ranges from $19 to $49.</p>
+			</div>
+
+			<!-- Upgrade -->
+			<div class = "col-sm-4 revenue-stream">
+				<h2>Upgrade</h2>
+
+				<p>Building upgrades of the same product or developing other versions of the product. Price starts from $449.</p>
+			</div>
+		</div>
+	</div>
+
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
