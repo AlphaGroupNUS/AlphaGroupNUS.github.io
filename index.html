@@ -102,6 +102,29 @@
 			height: 100vh;
 		}
 
+		h1.header {
+			color: white; 
+			font-size: 5em; 
+			margin-top: 15%;
+		}
+
+		p.header {
+			color: rgb(230, 230, 230);
+			font-size: 1.5em; 
+			margin-top: 50px;
+		}
+
+		@media (max-width: 768px) {
+			h1.header {
+				font-size: 3.5em;
+				margin-top: 25%;
+			}
+
+			p.header {
+				font-size: 1.25em;
+			}
+		}
+
 		/* CPF Page */
 		tr.header {
 			background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -188,6 +211,11 @@
 			min-height: 175px;
 			margin-bottom: 25px;
 		}
+
+		/* Our Team Page */
+		div.team {
+			min-height: 175px;
+		}
 	</style>
 </head>
 <body>
@@ -217,6 +245,8 @@
 						<li><a href = "#MVP" class = "nav-link">MVP</a></li>
 
 						<li><a href = "#revenue" class = "nav-link">Revenues</a></li>
+
+						<li><a href = "#team" class = "nav-link">Team</a></li>
 					</ul>
 				</div>
 			</div>
@@ -225,9 +255,9 @@
 		<!-- Header Title and Subtitle -->
 		<div class = "container">
 			<div class = "col-sm-10 col-sm-offset-1">
-				<h1 style = "color: white; font-size: 5em; margin-top: 15%;">Learning to Lead With Technology</h1>
+				<h1 class = "header">Learning to Lead With Technology</h1>
 
-				<p style = "color: rgb(230, 230, 230); font-size: 1.5em; margin-top: 50px;">We strive to identify, prioritize and select the right market opportunities by utilizing the Value Framework.</p>
+				<p class = "header">We strive to identify, prioritize and select the right market opportunities by utilizing the Value Framework.</p>
 			</div>
 		</div>
 	</header>
@@ -295,22 +325,22 @@
 	</div>
 
 	<!-- Customer Problem Statement Page -->
-	<div class = "container-fluid" style = "background-color: rgb(245, 245, 245); margin-top: 100px;">	
+	<div class = "container-fluid" style = "background-color: #003166; margin-top: 100px;">	
 		<div class = "container">
 			<!-- Title and Subtitle -->
 			<div class = "col-sm-10">
-				<h1 style = "margin-top: 50px;">Customer Story</h1>
+				<h1 style = "color: white; margin-top: 50px;">Customer Story</h1>
 				
-				<p class = "subtitle">From the problems identified earlier, we merely chose two - such as ironing and trash management - to analyze deeper. Below is what our customers have to say.</p>
+				<p class = "subtitle" style = "color: white;">From the problems identified earlier, we merely chose two - such as ironing and trash management - to analyze deeper. Below is what our customers have to say.</p>
 			</div>
 
 			<!-- Ironing CPS -->
-			<div class = "col-sm-6" style = "text-align: center;">
-				<h2>Ironing</h2>
+			<div class = "col-sm-6" style = "text-align: center; color: white;">
+				<h2 style = "color: white;">Ironing</h2>
 
 				<img class = "CPS" src = "ironing image.jpg">
 
-				<p align = "justify" style = "font-size: 1em;">
+				<p align = "justify" style = "color: white; font-size: 1em;">
 					Once upon a time, Sandi’s mother lived in a house with many residents inside.
 					<br><br>
 
@@ -328,12 +358,12 @@
 			</div>
 
 			<!-- Trash Management CPS -->
-			<div class = "col-sm-6" style = "text-align: center;">
-				<h2>Trash Management</h2>
+			<div class = "col-sm-6" style = "color: white; text-align: center;">
+				<h2 style = "color: white;">Trash Management</h2>
 
 				<img class = "CPS" src = "trash image.jpg">
 
-				<p align = "justify" style = "font-size: 1em; margin-bottom: 50px;">
+				<p align = "justify" style = "color: white; font-size: 1em; margin-bottom: 50px;">
 					Karen lives in South Korea with her family and resides near a university. She lives in an apartment with a lot of college students.
 					<br><br>
 
@@ -432,7 +462,7 @@
 	</div>
 
 	<!-- Revenues Page -->
-	<div class = "container-fluid" style = "background-color: rgb(245, 245, 245); margin-top: 100px;">	
+	<div class = "container-fluid" style = "background-color: rgb(240, 240, 240); margin-top: 100px;">	
 		<div class = "container" id = "revenue">
 			<!-- Title and Subtitle -->
 			<div class = "col-sm-10">
@@ -479,6 +509,49 @@
 
 				<p>Building upgrades of the same product or developing other versions of the product. Price starts from $449.</p>
 			</div>
+		</div>
+	</div>
+
+	<!-- Our Team Page -->
+	<div class = "container" id = "team">
+		<!-- Title -->
+		<div class = "col-sm-10">
+			<h1>Our Team</h1>
+		</div>
+
+		<!-- Chae A Lee -->
+		<div class = "col-sm-3 team">
+			<h2>Chae A Lee</h2>
+
+			<p>Team Leader</p>
+		</div>
+
+		<!-- Sandi Gunawan -->
+		<div class = "col-sm-3 team">
+			<h2>Sandi Gunawan</h2>
+
+			<p>Co-Leader</p>
+		</div>
+
+		<!-- Kevin Wijaya -->
+		<div class = "col-sm-3 team">
+			<h2>Kevin Wijaya</h2>
+
+			<p>PPT PIC, Web Developer</p>
+		</div>
+
+		<!-- Charlene -->
+		<div class = "col-sm-3 team">
+			<h2>Charlene Auriel Lim</h2>
+
+			<p>Contributor</p>
+		</div>
+
+		<!-- Sharon -->
+		<div class = "col-sm-3 team">
+			<h2>Sharon Aurellia</h2>
+
+			<p>Contributor</p>
 		</div>
 	</div>
 
