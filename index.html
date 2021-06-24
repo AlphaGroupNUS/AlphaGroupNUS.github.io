@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Alpha Group</title>
+	<title>Alpha Group | NUS</title>
 
 	<!-- Website Icon -->
 	<link rel = "shortcut icon" type = "image" href = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Autodesk_Logo_A_only.svg/629px-Autodesk_Logo_A_only.svg.png">
@@ -105,7 +105,7 @@
 		h1.header {
 			color: white; 
 			font-size: 5em; 
-			margin-top: 15%;
+			margin-top: 10%;
 		}
 
 		p.header {
@@ -215,6 +215,29 @@
 		/* Our Team Page */
 		div.team {
 			min-height: 175px;
+		}
+
+		/* Footer */
+		.footer-link {
+			color: white;
+			font-size: 1.15em;
+			line-height: 2.5em;
+		}
+
+		.footer-link:hover {
+			color: darkblue;
+			text-decoration: none;
+		}
+
+		p a {
+			color: white;
+			font-size: 1.15em;
+			font-weight: bold;
+		}
+
+		p a:hover {
+			color: darkblue;
+			text-decoration: none;
 		}
 	</style>
 </head>
@@ -555,6 +578,39 @@
 		</div>
 	</div>
 
-	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<!-- Footer -->
+	<div class = "footer" style = "background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%); margin-top: 75px;">
+		<div class = "container">
+			<!-- Group Name and Description -->
+			<div class = "col-sm-6">
+				<div class = "col-sm-9">
+					<h1 style = "color: white; font-size: 2.75em; margin-top: 75px;">Alpha Group</h1>
+
+					<p style = "color: white; font-size: 1em; margin-bottom: 50px;">This group is part of the FuturePreneur Programme: Learning to Lead with Tech held by National University of Singapore on June 2021.</p>
+				</div>
+			</div>
+
+			<!-- Navigation -->
+			<div class = "col-sm-4">
+				<h2 style = "color: white; font-size: 2em; margin-top: 75px; margin-bottom: 30px;">Navigation</h2>
+
+				<ul style = "list-style-type: none; padding-left: 0; margin-bottom: 75px;">
+					<li><a href = "#CPF" class = "footer-link">CPF</a></li>
+
+					<li><a href = "#market" class = "footer-link">Market</a></li>
+
+					<li><a href = "#MVP" class = "footer-link">MVP</a></li>
+
+					<li><a href = "#revenue" class = "footer-link">Revenues</a></li>
+
+					<li><a href = "#team" class = "footer-link">Team</a></li>
+				</ul>
+			</div>
+
+			<div class = "col-sm-12" style = "border-top: 1px solid lightgrey;">
+				<p align = "center" style = "color: white; font-size: 1em; padding: 25px; margin-bottom: 75px;">This website is built by <a href = "https://kevinwijaya15.github.io" target = "blank">Kevin</a></p>
+			</div>
+		</div>
+	</div>			
 </body>
 </html>
